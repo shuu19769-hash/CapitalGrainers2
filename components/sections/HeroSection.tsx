@@ -45,16 +45,16 @@ export function HeroSection() {
                 variants={reduce ? undefined : fadeUp}
                 className="text-balance text-[clamp(2rem,6vw,3.75rem)] font-bold leading-[1.12] tracking-tight text-white"
               >
-                Turning Digital Investment Into
-                <br />
-                <span className="mt-1 inline-block italic text-white md:mt-2">Measurable Growth</span>
+                Digital Marketing Built Around{" "}
+                <span className="italic text-white">Your Business</span>
               </motion.h1>
 
               <motion.p
                 variants={reduce ? undefined : fadeUp}
-                className="mx-auto mt-4 max-w-3xl text-pretty text-[clamp(1.125rem,3vw,2.125rem)] font-medium leading-snug text-white/90 sm:mt-5"
+                className="mx-auto mt-4 max-w-3xl text-pretty text-[clamp(1rem,2.75vw,1.5rem)] font-medium leading-relaxed text-white/90 sm:mt-5"
               >
-                Get a free growth audit to uncover your biggest opportunities for scale.
+                We understand your brand, audience, and goals to build digital strategies that drive
+                meaningful growth.
               </motion.p>
 
               <motion.div variants={reduce ? undefined : fadeUp} className="mt-8 sm:mt-10">
