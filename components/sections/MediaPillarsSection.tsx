@@ -9,7 +9,7 @@ const pillars = [
   {
     id: "owned",
     title: "Owned media",
-    image: "/images/pages/web-development.png",
+    image: "/images/pages/web-development.jpg",
     imageAlt: "Web development, Shopify, WordPress, and owned digital experiences",
     align: "left" as const,
     items: [
