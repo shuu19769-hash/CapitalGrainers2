@@ -110,7 +110,7 @@ export function Footer() {
                     </p>
                     <ul className="space-y-2">
                       {group.links.map((link) => (
-                        <li key={link.href}>
+                        <li key={`${link.href}-${link.label}`}>
                           <FooterLink href={link.href}>{link.label}</FooterLink>
                         </li>
                       ))}

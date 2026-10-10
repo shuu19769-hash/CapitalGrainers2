@@ -78,15 +78,27 @@ export function ContactForm() {
         <input id="website" name="website" type="url" placeholder="https://" className="mt-1 w-full border border-sand bg-white px-4 py-3 text-teal focus:border-copper focus:outline-none" />
       </div>
       <div className="grid gap-5 md:grid-cols-2">
-        <div>
-          <label htmlFor="service" className="text-sm font-semibold text-teal">Service interest</label>
-          <select id="service" name="service" className="mt-1 w-full border border-sand bg-white px-4 py-3 text-teal focus:border-copper focus:outline-none">
-            <option value="">Select a service</option>
-            {services.map((s) => (
-              <option key={s.slug} value={s.slug}>{s.title}</option>
-            ))}
-          </select>
-        </div>
+        <fieldset className="min-w-0">
+          <legend className="text-sm font-semibold text-teal">Service interest</legend>
+          <p className="mt-0.5 text-xs text-teal/60">Select all that apply</p>
+          <div className="mt-2 max-h-56 overflow-y-auto border border-sand bg-white px-4 py-3">
+            <ul className="space-y-2.5">
+              {services.map((s) => (
+                <li key={s.slug}>
+                  <label className="flex cursor-pointer items-start gap-3 text-sm text-teal">
+                    <input
+                      type="checkbox"
+                      name="service"
+                      value={s.slug}
+                      className="mt-0.5 h-4 w-4 shrink-0 accent-copper"
+                    />
+                    <span>{s.title}</span>
+                  </label>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </fieldset>
         <div>
           <label htmlFor="budget" className="text-sm font-semibold text-teal">Monthly budget range</label>
           <select id="budget" name="budget" className="mt-1 w-full border border-sand bg-white px-4 py-3 text-teal focus:border-copper focus:outline-none">

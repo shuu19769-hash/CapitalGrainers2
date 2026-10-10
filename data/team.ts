@@ -74,8 +74,6 @@ export const teamMembers: TeamMember[] = [
             description: "Interior design and furniture services",
           },
         ],
-        note:
-          "The exact scope of work and engagement period for each brand can be added to create more detailed case studies.",
       },
       {
         title: "Leadership at The Capital Gainers",

@@ -19,17 +19,17 @@ export const serviceCategories: {
 }[] = [
   {
     id: "earned",
-    title: "Earned Growth",
+    title: "Earned Media",
     description: "Organic visibility, search demand, and content systems that compound over time.",
   },
   {
     id: "paid",
-    title: "Paid Growth",
+    title: "Paid Media",
     description: "Performance media engineered for profitable acquisition, retargeting, and scale.",
   },
   {
     id: "owned",
-    title: "Owned Growth",
+    title: "Owned Media",
     description: "Stores, websites, and conversion experiences you control and optimize continuously.",
   },
   {
@@ -248,27 +248,39 @@ export function getServiceBySlug(slug: string): Service | undefined {
 
 export const megaMenuGroups = [
   {
-    title: "Earned Growth",
+    title: "Earned Media",
     links: [
-      { label: "Search Engine Optimization", href: "/services/search-engine-optimization" },
-      { label: "Branding & Creative", href: "/services/branding-creative" },
+      { label: "SEO", href: "/services/search-engine-optimization" },
+      { label: "Local SEO", href: "/services/search-engine-optimization" },
+      { label: "AI SEO", href: "/services/search-engine-optimization" },
+      { label: "Digital PR", href: "/services" },
+      { label: "Enterprise SEO Services", href: "/services/search-engine-optimization" },
     ],
   },
   {
-    title: "Paid Growth",
+    title: "Paid Media",
     links: [
       { label: "Google Ads", href: "/services/google-ads" },
       { label: "Meta Ads", href: "/services/meta-ads" },
+      { label: "Influencer Marketing", href: "/services" },
+      { label: "Pay Per Click", href: "/services/google-ads" },
+      { label: "Display Ads", href: "/services/google-ads" },
       { label: "TikTok Ads", href: "/services/tiktok-ads" },
+      { label: "LinkedIn Ads", href: "/services" },
+      { label: "Snapchat Ads", href: "/services" },
     ],
   },
   {
-    title: "Owned Growth",
+    title: "Owned Media",
     links: [
-      { label: "Ecommerce Scaling", href: "/services/ecommerce-scaling" },
-      { label: "Shopify Development", href: "/services/shopify-development" },
-      { label: "Website Development", href: "/services/website-development" },
+      { label: "Content Marketing", href: "/services" },
       { label: "Conversion Rate Optimization", href: "/services/conversion-rate-optimization" },
+      { label: "Creative & Branding", href: "/services/branding-creative" },
+      { label: "Web Development", href: "/services/website-development" },
+      { label: "Social Media Management", href: "/services" },
+      { label: "Email & SMS Marketing", href: "/services" },
+      { label: "WordPress Development", href: "/services/website-development" },
+      { label: "Shopify Store Development", href: "/services/shopify-development" },
     ],
   },
   {

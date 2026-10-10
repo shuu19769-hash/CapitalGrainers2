@@ -1,4 +1,6 @@
 node_modules
+.npm-cache
+.npm-temp
 .next
 out
 .env*.local
