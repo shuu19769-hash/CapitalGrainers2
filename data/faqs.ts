@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/site";
+
 export type FAQ = { question: string; answer: string };
 
 export const generalFaqs: FAQ[] = [
@@ -27,7 +29,7 @@ export const contactFaqs: FAQ[] = [
   {
     question: "How quickly will you respond?",
     answer:
-      "We aim to respond to new inquiries promptly during business hours. For urgent matters, reach us on WhatsApp at +92 322 9976687.",
+      `We aim to respond to new inquiries promptly during business hours. Email ${siteConfig.email} or reach us on WhatsApp at ${siteConfig.phone}.`,
   },
   {
     question: "What should I prepare before a strategy call?",

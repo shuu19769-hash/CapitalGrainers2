@@ -4,6 +4,8 @@ export const siteConfig = {
   description:
     "The Capital Gainers helps ambitious brands grow through SEO, paid media, ecommerce, development, conversion optimization, and AI-powered solutions.",
   url: "https://www.thecapitalgainers.com",
+  email: "info@thecapitalgainers.com",
+  emailHref: "mailto:info@thecapitalgainers.com",
   phone: "+92 322 9976687",
   phoneHref: "https://wa.me/923229976687",
   location: "Islamabad, Pakistan",

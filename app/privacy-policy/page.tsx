@@ -1,5 +1,6 @@
 import { createMetadata } from "@/lib/metadata";
 import { PageHero } from "@/components/ui/PageHero";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = createMetadata({
   title: "Privacy Policy",
@@ -30,8 +31,11 @@ export default function PrivacyPolicyPage() {
           </p>
           <h2 className="text-xl font-bold text-teal">Contact</h2>
           <p>
-            For privacy-related questions, contact us via WhatsApp at +92 322 9976687 or through our
-            contact page.
+            For privacy-related questions, email{" "}
+            <a href={siteConfig.emailHref} className="font-semibold text-copper hover:underline">
+              {siteConfig.email}
+            </a>
+            , reach us on WhatsApp at {siteConfig.phone}, or use our contact page.
           </p>
         </div>
       </section>

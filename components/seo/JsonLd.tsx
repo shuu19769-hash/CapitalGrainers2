@@ -7,6 +7,7 @@ export function OrganizationJsonLd() {
     name: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
+    email: siteConfig.email,
     telephone: siteConfig.phone,
     address: {
       "@type": "PostalAddress",

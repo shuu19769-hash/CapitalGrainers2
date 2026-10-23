@@ -8,7 +8,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 export const metadata = createMetadata({
   title: "Contact",
-  description: "Request a free growth audit. Islamabad, Pakistan · WhatsApp +92 322 9976687.",
+  description: `Request a free growth audit. ${siteConfig.email} · ${siteConfig.location} · WhatsApp ${siteConfig.phone}.`,
   path: "/contact",
 });
 
@@ -27,6 +27,12 @@ export default function ContactPage() {
             <div>
               <h2 className="text-lg font-bold text-teal">Get in touch</h2>
               <ul className="mt-4 space-y-3 text-teal/75">
+                <li>
+                  <a href={siteConfig.emailHref} className="font-semibold text-copper hover:underline">
+                    {siteConfig.email}
+                  </a>
+                  <span className="block text-sm">Email</span>
+                </li>
                 <li>
                   <a href={siteConfig.phoneHref} className="font-semibold text-copper hover:underline">
                     {siteConfig.phone}

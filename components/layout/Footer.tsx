@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site";
 import { megaMenuGroups } from "@/data/services";
 import { agencyStats } from "@/data/stats";
@@ -128,6 +128,18 @@ export function Footer() {
                 Get in touch
               </h3>
               <ul className="mt-5 space-y-4 text-sm">
+                <li>
+                  <a
+                    href={siteConfig.emailHref}
+                    className="flex items-start gap-3 text-sand/85 transition-colors hover:text-copper"
+                  >
+                    <Mail className="mt-0.5 h-4 w-4 shrink-0 text-copper" aria-hidden />
+                    <span>
+                      <span className="block font-semibold text-sand">{siteConfig.email}</span>
+                      <span className="text-sand/55">Email us anytime</span>
+                    </span>
+                  </a>
+                </li>
                 <li>
                   <a
                     href={siteConfig.phoneHref}
