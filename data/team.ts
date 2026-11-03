@@ -187,7 +187,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     slug: "abdul-mohaiman-lodhi",
-    name: "Director Abdul Mohaiman Lodhi",
+    name: "Managing Director Abdul Mohaiman Lodhi",
     roles: ["SEO & Google Ads", "AI Automation", "System Building"],
     bio:
       "Abdul Mohaiman engineers SEO, Google Ads, and automation systems that compound traffic and conversions—designing reliable growth infrastructure for scaling brands.",
