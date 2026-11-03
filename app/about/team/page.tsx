@@ -2,6 +2,8 @@ import { createMetadata } from "@/lib/metadata";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { LandingHero } from "@/components/ui/LandingHero";
 import { TeamTabs } from "@/components/sections/TeamTabs";
+import { teamMembers } from "@/data/team";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { getPageImages } from "@/lib/page-media";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,6 +39,20 @@ export default function TeamPage() {
         heroImage={hero.src}
         heroImageAlt={hero.alt}
       />
+
+      <section className="section-padding w-full max-w-full overflow-x-hidden bg-sand-light">
+        <div className="container-tcg">
+          <SectionHeader label="Leadership" title="Meet our leadership" align="center" />
+          <div className="mt-10">
+            <TeamTabs
+              idPrefix="leadership"
+              members={["shaukat-ayaz", "abdul-mohaiman-lodhi", "mirza-aryan-tariq"].flatMap(
+                (slug) => teamMembers.filter((m) => m.slug === slug)
+              )}
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="section-padding bg-white">
         <div className="container-tcg">
@@ -81,7 +97,7 @@ export default function TeamPage() {
         </div>
       </section>
 
-      <section className="section-padding bg-sand-light">
+      <section className="section-padding w-full max-w-full overflow-x-hidden bg-sand-light">
         <div className="container-tcg">
           <TeamTabs />
         </div>
